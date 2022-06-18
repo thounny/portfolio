@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thounny Keo | Portfolio</title>
+    <link rel="shortcut icon" type="image/jpg" href="/assets/logo1.png"/>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <header>
+      <div class="logo">
+        <span>Thounny</span>
+        <br />
+        Keo
+      </div>
+      <div class="menu-items">
+        <div class="freelance-work">
+          <a href="mailto:thounnykeo@gmail.com" class="mail">
+            <img src="/mail.svg" alt="" />thounnykeo@gmail.com
+          </a>
+          <p>Available for freelance work</p>
+        </div>
+        <div class="menu" onclick="menuOpen()">
+          <span id="menuBtn">
+            <div id="menuBtnDiv">MENU</div>
+            <div id="menuBtnDiv2">CLOSE</div>
+          </span>
+        </div>
+      </div>
+    </header>
+    <!-- container -->
+    <div class="container">
+      <div class="heading1">creative</div>
+      <div class="heading2">web</div>
+      <div class="heading3">development</div>
+    </div>
+    <!-- menuOpen  -->
+    <div class="menu-container">
+      <div class="menu-container-1">
+        <div></div>
+        <div class="menu-container-header">
+          <ul>
+            <li><span><a href="/all-works/all-work.html" class="yurt">All work</a></span></li>
+            <li><span><a href="/about-me/about-me.html" class="yurt">About me</a></span></li>
+            <li><span><a href="/contact/contact.html" class="yurt">Contact</a></span></li>
+            
+          </ul>
+        </div>
+        <div class="menu-container-footer">
+          <ul>
+            <li id="special-li">Latest Work</li>
+            <li><span><a href="/all-works/all-work.html" target="_blank">Portfolio Work</a></span></li>
+            <li><span><a href="https://thounny.github.io/react-chessV2/" target="_blank">Chess App</a></span></li>
+            <li><span>POS API (coming soon)</span></li>
+            <li><span><a href="https://thounny.github.io/typing-test-javascript/" target="_blank">Typing Test</a></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-container-2">
+        <div class="menu-container-footer">
+          <ul>
+            <li><span><a href="https://codepen.io/thounny-the-typescripter" target="_blank" id="links">codepen</a></span></li>
+            <li><span><a href="https://github.com/thounny" target="_blank" id="links">github</a></span></li>
+            <li><span><a href="https://stackoverflow.com/users/17294804/thounny" target="_blank" id="links">stackoverflow</a></span></li>
+            <li><span><a href="https://www.linkedin.com/in/thounny/" target="_blank" id="links">linkedin</a></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Cursors -->
+<svg class="cursor-sphere" width="37" height="36" viewBox="0 0 37 36" xmlns="http://www.w3.org/2000/svg">
+  <path class="cursor-sphere__inner" d="M18.5 32.093l-7.593 2.174-3.034-7.292-6.434-4.58 3.809-6.92-.43-7.886 7.784-1.336L18.5 1l5.898 5.253 7.784 1.336-.43 7.886 3.81 6.92-6.435 4.58-3.034 7.292z" fill-rule="evenodd"></path>
+</svg>
+<!-- <svg class="cursor" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+  <g class="cursor__path" fill="none" fill-rule="evenodd">
+    <path d="M5 8.884l-2.17.62-.866-2.083L.125 6.113l1.089-1.977-.123-2.253L3.315 1.5 5 0l1.685 1.5 2.224.383-.123 2.253 1.089 1.977L8.036 7.42 7.17 9.505z"></path>
+    <circle fill="#060606" cx="5" cy="5" r="1"></circle>
+  </g>
+</svg> -->
+    <script src="script.js"></script>
+  </body>
+</html>

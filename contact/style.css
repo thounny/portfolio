@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 200;
+    src: local("Monument Extended"),
+        url("https://fonts.cdnfonts.com/s/19595/MonumentExtended-Regular.woff") format("woff");
+}
+
+body {
+    background-color: #161616;
+    background: url(/assets/giphy\ \(3\).gif);
+    background-size: cover;
+    color: #f0f0f0;
+    font-family: 'Monument Extended';
+    overflow: hidden;
+}
+
+.cpage {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    height: 90vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 70px;
+    white-space: nowrap;
+    /* font-style: italic; */
+    font-weight: 350;
+    margin-left: 20px;
+    transition: .5s ease-in-out;
+}
+
+.block {
+    display: flex;
+    border-bottom: 1px solid white;
+}
+
+.hover {
+    opacity: 0;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.block:hover .hover {
+    opacity: 1;
+    animation: animate 10s linear infinite;
+    transition: .5s ease-in-out;
+}
+
+@keyframes animate {
+    from {
+        transform: translateX(50%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.block:hover .present {
+    opacity: 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer ul li {
+    margin-left: 25px;
+}
+
+.footer .logo {
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.footer .logo img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: -18px;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(182, 175, 175);
+    font-size: 20px;
+    border: .5px solid rgb(182, 175, 175);
+    border-radius: 50%;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: .3s ease-in-out;
+}
+
+a:hover {
+    background: green;
+    color: #161616;
+    transition: .3s ease-in-out;
+}

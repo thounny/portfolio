@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact page</title>
+    <link rel="shortcut icon" type="image/jpg" href="/assets/logo1.png"/>
+    <link rel="stylesheet" href="/contact/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+</head>
+<body>
+    <div class="cpage">
+        <div class="email block">
+            <h1 class="present">Email</h1>
+            <h1 class="hover">thounnykeo@gmail.com</h1>
+        </div>
+        <div class="phone block">
+            <h1 class="present">Telegram</h1>
+            <h1 class="hover">@thounny</h1>
+        </div>
+        <div class="address block">
+            <h1 class="present">Located</h1>
+            <h1 class="hover">Atlanta, Georgia</h1>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="social">
+            <ul>
+                <li><span><a href="https://github.com/thounny" target="_blank" id="links">github</a></span></li>
+            <li><span><a href="https://stackoverflow.com/users/17294804/thounny" target="_blank" id="links">stackoverflow</a></span></li>
+            <li><span><a href="https://www.linkedin.com/in/thounny/" target="_blank" id="links">linkedin</a></span></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <a href="/index.html"><img src="/assets/logo1.png" class="png"></a>
+        </div>
+    </div>
+<script>
+    const tl = gsap.timeline();
+    tl.from(".cpage",{
+        duration: 2,
+        opacity: 0,
+        y:"-100%",
+        stagger: {
+            amount: 1
+        }
+    });
+    tl.from(".footer",{
+        duration: 1,
+        opacity: 0,
+        y:"100%",
+        stagger: {
+            amount: .25
+        }
+    },"-=.5");
+</script>
+</body>
+</html>

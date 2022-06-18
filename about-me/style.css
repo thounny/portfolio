@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Monument Extended";
+    font-style: normal;
+    font-weight: 200;
+    src: local("Monument Extended"),
+        url("https://fonts.cdnfonts.com/s/19595/MonumentExtended-Regular.woff") format("woff");
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    font-family: "Monument Extended";
+    text-decoration: none;
+    z-index: 9999;
+}
+
+.logo img {
+    height: 200px;
+    width: 500px;
+    z-index: 9999;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: url(/assets/giphy\ \(10\).gif);
+    background-size: cover;
+    color: white;
+    font-family: "Monument Extended";
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+}
+
+.smooth-scroll-wrapper {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.content {
+    width: 80%;
+    margin: 160px auto;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 200;
+    color: white;
+}
+
+.img {
+    width: 100%;
+    height: 200px;
+    background: url(/assets/blooming2_1.gif) no-repeat 50% 40%;
+    background-size: cover;
+    margin: 40px auto;
+    filter: invert();
+}
+
+.png {
+    height: 50px;
+    width: 50px;
+    display: flex;
+}
+
+.png:hover {
+    filter: invert();
+}

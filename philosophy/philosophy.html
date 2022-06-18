@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>philosophy</title>
+    <link rel="shortcut icon" type="image/jpg" href="/assets/logo1.png"/>
+    <link rel="stylesheet" href="/philosophy/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="/index.html"><img src="/assets/FW_Sticker_13 copy.png" class="png"></a>
+    </div>
+    <div class="container">
+        <div class="txt-line">
+            <p>
+                Make stuff. Weird stuff. Smart stuff. Cool stuff. Random stuff. Creativity has no value locked up in a notebook.
+            </p>
+        </div>
+        <div class="txt-line">
+            <p>
+                my passion is when passion comes.
+            </p>
+        </div>
+        <div class="txt-line">
+            <p>
+                what do i wanna do? i don't know. i just do.
+            </p>
+        </div>
+        <div class="txt-line">
+            <p>
+                ordinary <br> <em>(extra)</em>ordinary
+            </p>
+        </div>
+        <div class="txt-line">
+            <p>
+                no next time.
+            </p>
+        </div>
+    </div>
+    <script>
+        const tl = gsap.timeline();
+        tl.from(".txt-line p", {
+            duration: 1.8,
+            delay: 1,
+            y: 200,
+            skewY: 10,
+            stagger: {
+                amount: .4
+            },
+
+            ease: "power4.out"
+        });
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>about me</title>
+        <link rel="shortcut icon" type="image/jpg" href="/assets/logo1.png"/>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="smooth-scroll-wrapper">
+            <div class="logo">
+                <a href="/index.html"><img src="/assets/FW_Sticker_13 copy.png" class="png"></a>
+            </div>
+            
+            <div class="content">
+                <h1>
+                    :no time to explain
+                </h1>
+                <div class="img"></div>
+
+                <p>
+                    Creative Web Developer and Visual Media Artist from Atlanta, Georgia.
+                </p>
+                <p>
+                    from visual artist to creative Front-End Web Developer, I have a passion of combining both worlds of visual art
+                    and creative design to create unique, accessible, and user-friendly websites and applications.
+                </p>
+                <div class="img"></div>
+
+                <h1>:more than pretty screens</h1>
+                <p>
+                    I love working on meaningful projects ⏤ I believe that every action has an impact and each person can contribute to creating a better, more positive world.
+                </p>
+
+                <div class="img"></div>
+
+                <p>
+                    CLIENTS INCLUDE: Marco Plus, Dp0mmy, Doomsday Protocol, On Ice Clothing
+                </p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <h1>
+                    :no time to explain
+                </h1>
+                <div class="img"></div>
+
+                <p>
+                    Freelance web designer with satisfied clients worldwide. Experience with Adobe Creative Cloud for over 10 years,
+                    I have grown into a fast learning creative with a passion for remarkable design.
+                </p>
+                <p>
+                    Immense appreciation and passion for art.
+                </p>
+                <div class="img"></div>
+
+                <h1>:more than pretty screens</h1>
+                <p>
+                    Previous education includes photography, graphic design, video, mixed media. <br>
+                    This mix of skills and knowledge is used to power a holistic user experience design process, 
+                    where the underlying message is communicated through powerful, yet accessible and intriguing aesthetics.<br>
+                    Which in turn are driven by the diverse research results, gained from a wide perspective of research methods,
+                    including but not limited to the infield, material, digital, and journalism.
+                </p>
+
+                <div class="img"></div>
+
+                <p>
+                    Feel free to contact me for work! <a href="/contact/contact.html"><img src="/assets/logo1.png" class="png"></a>
+                </p>
+            </div>
+        </div>
+        <script>
+            const body = document.body,
+                scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+                height = scrollWrap.getBoundingClientRect().height - 1,
+                speed = 0.04;
+
+            var offset = 0;
+
+            body.style.height = Math.floor(height) + "px";
+
+            function smoothScroll() {
+                offset += (window.pageYOffset - offset) * speed;
+
+                var scroll = "translateY(-" + offset + "px) translateZ(0)";
+                scrollWrap.style.transform = scroll;
+
+                callScroll = requestAnimationFrame(smoothScroll);
+            }
+
+            smoothScroll();
+        </script>
+    </body>
+</html>

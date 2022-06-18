@@ -1,0 +1,315 @@
+@font-face {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Monument Extended"),
+    url("https://fonts.cdnfonts.com/s/19595/MonumentExtended-Regular.woff")
+      format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* cursor: none; */
+}
+* {
+  cursor: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#links {
+  text-decoration: none;
+  color: black;
+  font-family: "Monument Extended";
+}
+
+.yurt {
+  color: white;
+}
+
+:root {
+  --color-text: #f6f1f1;
+  --color-bg: #0f0e0e;
+
+  --cursor-sphere-fill: transparent;
+  --cursor-sphere-stroke: #ea2e6e;
+  --cursor-sphere-stroke-width: 1.5px;
+
+  --cursor-fill: yellow;
+}
+
+body {
+  background: url(/assets/glitch-static.gif) no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+  z-index: 100;
+  mix-blend-mode: difference;
+  width: 100%;
+  height: fit-content;
+}
+header .logo {
+  margin-left: 35px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #bbbeeb;
+  font-family: "Monument Extended";
+  font-size: 40px;
+}
+
+header .logo:hover {
+  filter: invert(100%);
+}
+
+header .menu-items {
+  display: flex;
+  font-family: "Monument Extended";
+  align-items: flex-end;
+  margin-right: 35px;
+}
+header .menu-items .freelance-work {
+  padding: 0px 60px;
+  font-size: 15px;
+}
+.freelance-work a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #bbc4eb;
+}
+.freelance-work a img {
+  width: 15px;
+  padding-right: 10px;
+}
+.freelance-work p {
+  text-decoration: none;
+  color: #ebbbbb;
+}
+.menu-items .menu {
+  font-size: 50px;
+  line-height: 1;
+  padding: 0px 15px;
+  font-weight: bold;
+  overflow: hidden;
+  color: #ebbbe7;
+}
+.menu-items .menu span {
+  display: block;
+  position: relative;
+}
+.logo span {
+  font-size: 30px;
+}
+#menuBtnDiv2 {
+  position: absolute;
+}
+
+#menuBtnDiv:hover {
+  filter: invert();
+}
+
+#menuBtnDiv2:hover {
+  filter: invert();
+}
+
+/* container  */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+}
+.container div {
+  font-size: 160px;
+  line-height: 1.58;
+  font-family: "Monument Extended";
+  font-weight: lighter;
+  color: #ebbbe7;
+}
+
+.container div:hover {
+  filter: blur(8px);
+}
+
+.heading1 {
+  margin-left: 11%;
+}
+.heading3 {
+  margin-left: 1px;
+}
+
+/* custom cursor */
+/* .cursor {
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 50%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transform: translateX(-50%) translateY(-50%);
+	mix-blend-mode: exclusion;
+  z-index: 5;
+} */
+
+/* Cursor CSS Start */
+.cursor {
+  display: none;
+}
+
+@media (any-pointer: fine) {
+  .cursor,
+  .cursor-sphere {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+
+  .cursor-sphere__inner {
+    fill: var(--cursor-sphere-fill);
+    stroke: white;
+    stroke-width: var(--cursor-sphere-stroke-width);
+    opacity: 0.7;
+    animation: rotationAnim 3s linear infinite;
+    transform-origin: center;
+  }
+
+  .cursor__path {
+    fill: var(--cursor-fill);
+  }
+
+  @keyframes rotationAnim {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+/* Cursor CSS End */
+
+.mail:hover {
+  filter: blur(5px);
+  filter: invert(75%);
+  color: blue;
+}
+
+.freelance-work:hover {
+  filter: blur(5px);
+  filter: invert(75%);
+  color: blue;
+}
+
+
+/* menu container  */
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  font-family: "Monument Extended";
+}
+.menu-container .menu-container-1 {
+  width: 60vw;
+  background-color: #101010;
+  background: url(/assets/yurt.gif);
+  background-size: cover;
+}
+.menu-container-1 {
+  display: flex;
+  padding: 10vh 5vw;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #e7cfe5;
+}
+.menu-container-1 .menu-container-header li {
+  font-size: 60px;
+  margin: 10px 0px;
+  font-weight: bold;
+  overflow: hidden;
+}
+.menu-container-1 .menu-container-footer li {
+  font-size: 30px;
+  font-weight: lighter;
+  text-decoration: underline;
+  margin: 5px 0px;
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+.menu-container .menu-container-2 {
+  width: 40vw;
+  background-color: #e7cfe5;
+  background: url(/assets/giphy.gif);
+  background-size: cover;
+}
+.menu-container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10vh 5vw;
+  color: #101010;
+}
+.menu-container-2 .menu-container-footer li {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 5px 0px;
+  overflow: hidden;
+}
+#special-li {
+  font-size: 20px;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+
+#links {
+  text-decoration: none;
+  color: black;
+}
+
+#links:link { text-decoration: none; }
+#links:visited { text-decoration: none; }
+#links:hover { text-decoration: none; }
+#links:active { text-decoration: none; }
+
+.menu-container-header li span,
+.menu-container-footer li span {
+  display: block;
+  position: relative;
+}
+
+.menu-container-header li:hover span,
+.menu-container-footer li:hover span {
+  animation: MoveDown 0.3s forwards, MoveUp 0.2s forwards 0.2s;
+}
+@keyframes MoveDown {
+  to {
+    transform: translate3d(0, 105%, 0);
+  }
+}
+@keyframes MoveUp {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
